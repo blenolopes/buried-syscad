@@ -1,0 +1,54 @@
+object fmPainelControle: TfmPainelControle
+  Left = 385
+  Top = 286
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'sysCad :: Painel de Controle'
+  ClientHeight = 78
+  ClientWidth = 414
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Top = 8
+    object Funcionrio1: TMenuItem
+      Caption = '&Funcion'#225'rio'
+      object Cadastrarfuncionario1: TMenuItem
+        Caption = '&Cadastrar funcionario...'
+        ShortCut = 116
+        OnClick = Cadastrarfuncionario1Click
+      end
+      object Editarcadastro1: TMenuItem
+        Caption = '&Editar cadastro...'
+        ShortCut = 117
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Listarfuncionrios1: TMenuItem
+        Caption = '&Listar funcion'#225'rios...'
+        ShortCut = 118
+      end
+    end
+    object Ajuda1: TMenuItem
+      Caption = '&Ajuda'
+      object Sobre1: TMenuItem
+        Caption = '&Sobre...'
+        ShortCut = 112
+        OnClick = Sobre1Click
+      end
+    end
+    object Sair1: TMenuItem
+      Caption = '&Sair'
+      OnClick = Sair1Click
+    end
+  end
+end

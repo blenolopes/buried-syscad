@@ -1,0 +1,64 @@
+unit cadCliente;
+
+interface
+type
+  TCliente = class(TObject)
+
+private
+  nomeCliente  : string;
+  endCliente   : string;
+  foneCliente  : string;
+  loginCliente : string;
+  senhaCliente : string;
+
+public
+  constructor create(nCliente : string; eCliente : string; fCliente : string;
+                     lCliente : string; sCliente : string);
+  function getNomeCliente  : string;
+  function getEndCliente   : string;
+  function getFoneCliente  : string;
+  function getLoginCliente : string;
+  function getSenhaCliente : string;
+
+end;
+
+implementation
+{ TCliente }
+
+constructor TCliente.create(nCliente : string; eCliente : string; fCliente : string;
+                            lCliente : string; sCliente : string);
+begin
+  self.nomeCliente  := nCliente;
+  self.endCliente   := eCliente;
+  self.foneCliente  := fCliente;
+  self.loginCliente := lCliente;
+  self.senhaCliente := sCliente;
+end;
+
+function TCliente.getNomeCliente : string;
+begin
+  result := self.nomeCliente;
+end;
+
+function TCliente.getEndCliente : string;
+begin
+  result := self.endCliente;
+end;
+
+function TCliente.getFoneCliente : string;
+begin
+  result := self.foneCliente;
+end;
+
+function TCliente.getLoginCliente : string;
+begin
+  result := self.loginCliente;
+end;
+
+function TCliente.getSenhaCliente : string;
+begin
+  result := self.senhaCliente;
+end;
+
+end.
+ 
